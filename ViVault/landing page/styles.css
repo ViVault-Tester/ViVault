@@ -2,9 +2,25 @@
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  background-color: #000;
+  background-image: linear-gradient(
+    300deg,
+    hsl(0deg 0% 0%) 1%,
+    hsl(59deg 10% 6%) 39%,
+    hsl(60deg 4% 10%) 47%,
+    hsl(60deg 3% 13%) 50%,
+    hsl(33deg 8% 17%) 51%,
+    hsl(18deg 10% 22%) 51%,
+    hsl(0deg 9% 28%) 50%,
+    hsl(0deg 7% 22%) 49%,
+    hsl(0deg 5% 17%) 49%,
+    hsl(0deg 0% 12%) 50%,
+    hsl(344deg 0% 9%) 53%,
+    hsl(344deg 0% 5%) 61%,
+    hsl(0deg 0% 0%) 99%
+  );
   color: #fff;
   overflow: auto;
+  
 }
 body a{
   text-decoration: none;
@@ -25,6 +41,7 @@ body::-webkit-scrollbar-thumb{
   padding: 2rem; 
   width: 100%;
   min-height: 100vh; 
+  z-index: 100;
 }
 /* Adding the background image */
 /* .main-content::before { 
@@ -47,7 +64,8 @@ body::-webkit-scrollbar-thumb{
 /* navbar */
 
 .navbar {
-  background-color: rgb(20, 17, 17);
+  /* background-color: rgb(20, 17, 17); */
+  background-color: #000;
   display: flex;
   width: 100%;
   height: 80px;
@@ -242,6 +260,8 @@ body::-webkit-scrollbar-thumb{
   text-align: center;
   font-size: 0.8rem;
   color: #e0dddd;
+  background-color: #000;
+  margin-bottom: 0;
 }
 
 /* footer transitions */
@@ -305,6 +325,7 @@ body::-webkit-scrollbar-thumb{
   .footer {
     flex-direction: column;
     gap: 1rem;
+    padding: 0;
     
   }
   .socials{
@@ -316,8 +337,14 @@ body::-webkit-scrollbar-thumb{
   }
 
   .copyright-note{
-    margin-top: 10%;
-    margin-left: 1.6rem;
+    /* margin-top: 10%; */
+    /* margin-left: 1.6rem */
+    padding-left: 25px;
+    padding-top: 13px;
+  }
+  .warning{
+    background-color: #000;
+    width: 100%;
   }
 }
 
