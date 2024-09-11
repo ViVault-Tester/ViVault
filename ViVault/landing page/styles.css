@@ -97,7 +97,7 @@ body::-webkit-scrollbar-thumb{
 .logo-menu a{
   font-weight: 700;
   font-size: 2rem;
-
+  cursor: pointer;
 }
 
 .searchbar{
@@ -318,6 +318,9 @@ body::-webkit-scrollbar-thumb{
 }
 
 @media (max-width: 540px){
+  .logo-menu a{
+    display: none;
+  }
   .card-info {
     line-height: 2rem;
     font-size: 1rem;

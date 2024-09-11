@@ -1,0 +1,137 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-image: linear-gradient(
+    300deg,
+    hsl(0deg 0% 0%) 1%,
+    hsl(59deg 10% 6%) 39%,
+    hsl(60deg 4% 10%) 47%,
+    hsl(60deg 3% 13%) 50%,
+    hsl(33deg 8% 17%) 51%,
+    hsl(18deg 10% 22%) 51%,
+    hsl(0deg 9% 28%) 50%,
+    hsl(0deg 7% 22%) 49%,
+    hsl(0deg 5% 17%) 49%,
+    hsl(0deg 0% 12%) 50%,
+    hsl(344deg 0% 9%) 53%,
+    hsl(344deg 0% 5%) 61%,
+    hsl(0deg 0% 0%) 99%
+  );
+  color: #fff;
+  overflow: auto;
+  
+}
+body a{
+  text-decoration: none;
+  color: #fff;
+}
+body::-webkit-scrollbar{
+  background-color:transparent ;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #1f1d1d;
+}
+
+
+/* navbar */
+
+.navbar {
+  /* background-color: rgb(20, 17, 17); */
+  background-color: #000;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem 0 1.5rem;
+  flex-wrap: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-menu{
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+.logo-menu i{
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  transition: transform ease 0.25s;
+}
+.logo-menu i:hover{
+  transform: scale(1.05);
+}
+
+.logo-menu a{
+  font-weight: 700;
+  font-size: 2rem;
+
+}
+
+.searchbar{
+  display: flex;
+  flex: 0.7;
+}
+.searchbar input{
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 1rem;
+  background-color: transparent;
+  padding: 0.6rem;
+  font-size: 1rem;
+  color: #fff;
+  transition: all ease 0.25s;
+}
+
+.searchbar input:hover {
+  box-shadow: 0 0 5px 0.75px;
+}
+
+.searchbar button{
+  color: white;
+  font-size: 1.3rem;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  transition: all ease 0.25s;
+
+}
+
+.searchbar button:hover {
+  transform: scale(1.15);
+}
+
+.nav-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav-options i{
+  font-size: 1.5rem;
+}
+
+#cart-icon{
+  transition: all ease 0.25s;
+  cursor: pointer;
+}
+#cart-icon:hover {
+  transform: scale(1.2);
+}
+#user-icon{
+  transition: all ease 0.25s;
+  cursor: pointer;
+}
+#user-icon:hover{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+/* main-page */
